@@ -5,7 +5,7 @@
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
       chrome.declarativeContent.onPageChanged.addRules([{
         conditions: [new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostEquals: 'https://theshownation.com/mlb20/orders/open_orders'},
+          pageUrl: {hostEquals: 'theshownation.com'},
         })
         ],
             actions: [new chrome.declarativeContent.ShowPageAction()]
