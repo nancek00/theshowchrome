@@ -5,5 +5,8 @@ chrome.runtime.sendMessage({
 });
 
 function DOMtoString(doc) {
-    return "Ken";
+    const c = doc.querySelector("table");
+
+    const p = c.querySelectorAll("tr").length;
+    return "Ken" + p;
 }
